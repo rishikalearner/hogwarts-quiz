@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+
+  background: url('cover.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+  animation: zoomBg 20s infinite alternate;
+}
+
+/* overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: -1;
+}
+
+.hidden { display: none; }
+
+.screen {
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+
+/* INPUT */
+input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+/* ✨ TITLE */
+h1 {
+  font-size: 3rem;
+  animation: glow 2s infinite alternate;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 📸 IMAGE */
+#question-img {
+  width: 260px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+/* ✨ OPTIONS GRID */
+#options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* 🪄 MAGIC CARD */
+.option-card {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* hover glow */
+.option-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 20px gold;
+}
+
+/* click effect */
+.option-card:active {
+  transform: scale(0.95);
+}
+
+/* PARTICLES */
+.particles::after {
+  content: "";
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow:
+    100px 200px white,
+    300px 400px white,
+    500px 100px white,
+    700px 300px white,
+    900px 200px white;
+  animation: floatParticles 10s linear infinite;
+}
+
+/* HOUSE THEMES */
+.gryffindor { background: linear-gradient(135deg, rgba(116,0,1,0.8), rgba(211,166,37,0.8)); }
+.slytherin { background: linear-gradient(135deg, rgba(26,71,42,0.8), rgba(93,93,93,0.8)); }
+.ravenclaw { background: linear-gradient(135deg, rgba(14,26,64,0.8), rgba(148,107,45,0.8)); }
+.hufflepuff { background: linear-gradient(135deg, rgba(255,219,0,0.8), rgba(96,96,92,0.8)); }
+
+/* RESULT CARD */
+#result-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  animation: popUp 1s ease;
+}
+
+/* ANIMATIONS */
+@keyframes glow {
+  from { text-shadow: 0 0 10px gold; }
+  to { text-shadow: 0 0 25px orange; }
+}
+
+@keyframes zoomBg {
+  from { background-size: 100%; }
+  to { background-size: 110%; }
+}
+
+@keyframes floatParticles {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
+}
+
+@keyframes popUp {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
