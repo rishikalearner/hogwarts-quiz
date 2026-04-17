@@ -11,7 +11,7 @@ let score = {
 const questions = [
   {
     text: "Pick a character",
-    img: "https://source.unsplash.com/400x300/?wizard",
+    img: 'wizard.jpg',
     options: [
       { text: "Harry", house: "gryffindor" },
       { text: "Draco", house: "slytherin" },
