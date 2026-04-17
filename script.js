@@ -20,23 +20,23 @@ const questions = [
     ]
   },
   {
-    text: "What would you do in danger?",
-    img: "https://source.unsplash.com/400x300/?magic,battle",
+    text: "You’re walking alone in the Forbidden Forest at night. Suddenly, you hear something moving behind you… what do you do?",
+    img: 'forest.jpg',
     options: [
-      { text: "Fight", house: "gryffindor" },
-      { text: "Plan", house: "slytherin" },
-      { text: "Think", house: "ravenclaw" },
-      { text: "Protect", house: "hufflepuff" }
+      { text: "Turn around and face it head-on", house: "gryffindor" },
+      { text: "Stay calm and quietly plan your next move", house: "slytherin" },
+      { text: "Observe carefully before reacting", house: "ravenclaw" },
+      { text: "Call out and try to avoid conflict", house: "hufflepuff" }
     ]
   },
   {
-    text: "Choose a trait",
-    img: "https://source.unsplash.com/400x300/?fire",
+    text: "You discover a hidden room in Hogwarts that no one knows about. What’s your first move?",
+    img: 'room.jpg',
     options: [
-      { text: "Brave", house: "gryffindor" },
-      { text: "Ambitious", house: "slytherin" },
-      { text: "Wise", house: "ravenclaw" },
-      { text: "Loyal", house: "hufflepuff" }
+      { text: "Explore it immediately", house: "gryffindor" },
+      { text: "Think how you can use it to your advantage", house: "slytherin" },
+      { text: "Study its secrets and history", house: "ravenclaw" },
+      { text: "Share it with close friends", house: "hufflepuff" }
     ]
   }
 ];
