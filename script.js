@@ -9,24 +9,36 @@ let score = {
 };
 
 const questions = [
-  { text: "Pick a character", img: "https://source.unsplash.com/400x300/?wizard", options: [
-    { text: "Harry", house: "gryffindor" },
-    { text: "Draco", house: "slytherin" },
-    { text: "Luna", house: "ravenclaw" },
-    { text: "Cedric", house: "hufflepuff" }
-  ]},
-  { text: "What would you do in danger?", img: "https://source.unsplash.com/400x300/?magic,battle", options: [
-    { text: "Fight", house: "gryffindor" },
-    { text: "Plan", house: "slytherin" },
-    { text: "Think", house: "ravenclaw" },
-    { text: "Protect", house: "hufflepuff" }
-  ]},
-  { text: "Choose a trait", img: "https://source.unsplash.com/400x300/?fire", options: [
-    { text: "Brave", house: "gryffindor" },
-    { text: "Ambitious", house: "slytherin" },
-    { text: "Wise", house: "ravenclaw" },
-    { text: "Loyal", house: "hufflepuff" }
-  ]}
+  {
+    text: "Pick a character",
+    img: "https://source.unsplash.com/400x300/?wizard",
+    options: [
+      { text: "Harry", house: "gryffindor" },
+      { text: "Draco", house: "slytherin" },
+      { text: "Luna", house: "ravenclaw" },
+      { text: "Cedric", house: "hufflepuff" }
+    ]
+  },
+  {
+    text: "What would you do in danger?",
+    img: "https://source.unsplash.com/400x300/?magic,battle",
+    options: [
+      { text: "Fight", house: "gryffindor" },
+      { text: "Plan", house: "slytherin" },
+      { text: "Think", house: "ravenclaw" },
+      { text: "Protect", house: "hufflepuff" }
+    ]
+  },
+  {
+    text: "Choose a trait",
+    img: "https://source.unsplash.com/400x300/?fire",
+    options: [
+      { text: "Brave", house: "gryffindor" },
+      { text: "Ambitious", house: "slytherin" },
+      { text: "Wise", house: "ravenclaw" },
+      { text: "Loyal", house: "hufflepuff" }
+    ]
+  }
 ];
 
 function startQuiz() {
