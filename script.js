@@ -26,24 +26,6 @@ const questions = [
     { text: "Ambitious", house: "slytherin" },
     { text: "Wise", house: "ravenclaw" },
     { text: "Loyal", house: "hufflepuff" }
-  ]},
-  { text: "Pick a place", img: "https://source.unsplash.com/400x300/?castle", options: [
-    { text: "Battlefield", house: "gryffindor" },
-    { text: "Castle", house: "slytherin" },
-    { text: "Library", house: "ravenclaw" },
-    { text: "Garden", house: "hufflepuff" }
-  ]},
-  { text: "Your vibe?", img: "https://source.unsplash.com/400x300/?dark,aesthetic", options: [
-    { text: "Bold", house: "gryffindor" },
-    { text: "Strategic", house: "slytherin" },
-    { text: "Curious", house: "ravenclaw" },
-    { text: "Kind", house: "hufflepuff" }
-  ]},
-  { text: "Choose a pet", img: "https://source.unsplash.com/400x300/?owl,cat,dog", options: [
-    { text: "Owl", house: "gryffindor" },
-    { text: "Snake", house: "slytherin" },
-    { text: "Cat", house: "ravenclaw" },
-    { text: "Dog", house: "hufflepuff" }
   ]}
 ];
 
@@ -65,11 +47,7 @@ function showQuestion() {
 
   let html = "";
   q.options.forEach(opt => {
-    html += `
-      <div class="option-card" onclick="nextQuestion('${opt.house}')">
-        ${opt.text}
-      </div>
-    `;
+    html += `<div class="option-card" onclick="nextQuestion('${opt.house}')">${opt.text}</div>`;
   });
 
   document.getElementById("options").innerHTML = html;
